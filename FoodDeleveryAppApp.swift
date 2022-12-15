@@ -1,10 +1,9 @@
 //
-//  FoodOrderingApp.swift
-//  FoodOrdering
+//  FoodOrdering1App.swift
+//  FoodOrdering1
 //
-//  Created by Jayce Sagvold on 12/14/22.
+//  Created by Jayce Sagvold on 12/15/22.
 //
-
 
 import SwiftUI
 
@@ -15,12 +14,13 @@ struct MyApp: App {
             TabView {
                 ContentView()
                     .tabItem {
-                        Label("Food", systemImage: "fork.knife")
+                        Image(systemName: "fork.knife")
+                        Text("Food")
                     }
                 Delevery()
                     .tabItem {
-                        Label("Delevery", systemImage: "car.fill")
-                        
+                        Image(systemName: "car.fill")
+                        Text("Delevery")
                     }
             }
         }
